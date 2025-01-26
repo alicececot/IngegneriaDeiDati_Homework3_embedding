@@ -1,0 +1,120 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #1a0dab;
+    margin-top: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+#searchForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 10px; /* Aggiunge spazio tra gli elementi del form */
+}
+
+#searchForm input[type="text"] {
+    width: 800px;
+    height: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease;
+    margin-right: 10px;
+}
+
+#searchForm input[type="text"]:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.search-button {
+    background-color: #4d90fe;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #357ae8;
+}
+
+#results-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#Info {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#results {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.result-item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.result-item p {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+#results h2 {
+    font-size: 18px;
+    color: #1a0dab;
+    margin: 0;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+#results p {
+    font-size: 14px;
+    color: #545454;
+    margin: 5px 0;
+}
+
+#results p strong {
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Aggiunge spazio tra i pulsanti */
+    justify-content: center;
+    margin-top: 10px;
+}
+

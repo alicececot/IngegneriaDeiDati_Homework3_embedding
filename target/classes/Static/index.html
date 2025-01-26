@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Searcher</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<h1>Web Searcher</h1>
+<form id="searchForm">
+    <div class="search-bar-container">
+        <input type="text" id="query" placeholder="Enter your query" required>
+    </div>
+    <button type="button" onclick="search()" class="search-button">
+        🔍 Search
+    </button>
+    <button type="button" onclick="searchWithEmbeddings()" class="search-button">
+        🔍 Search with Embeddings
+    </button>
+</form>
+
+<div id="results-container">
+    <div id="Info"></div>
+    <div id="results"></div>
+</div>
+
+<script>
+    async function search() {
+        const query = document.getElementById("query").value;
+
+        const startTime = performance.now();
+        try {
+            const response = await fetch(`/search?query=${encodeURIComponent(query)}`);
+
+            if (!response.ok) {
+                throw new Error(`Server error: ${response.statusText}`);
+            }
+
+            const results = await response.json();
+
+            const endTime = performance.now();
+            const searchDuration = ((endTime - startTime) / 1000).toFixed(2);
+            document.getElementById("Info").innerHTML = `<p>Search time: ${searchDuration} seconds - Results: ${results.length}</p>`;
+
+            renderResults(results);
+        } catch (error) {
+            console.error("Error:", error);
+            document.getElementById("results").innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+        }
+    }
+
+    async function searchWithEmbeddings() {
+        const query = document.getElementById("query").value;
+
+        const startTime = performance.now();
+        try {
+            const response = await fetch(`/searchWithEmbeddings?queryText=${encodeURIComponent(query)}`);
+
+            if (!response.ok) {
+                throw new Error(`Server error: ${response.statusText}`);
+            }
+
+            const results = await response.json();
+
+            const endTime = performance.now();
+            const searchDuration = ((endTime - startTime) / 1000).toFixed(2);
+            document.getElementById("Info").innerHTML = `<p>Search time (embedding): ${searchDuration} seconds - Results: ${results.length}</p>`;
+
+            renderResults(results);
+        } catch (error) {
+            console.error("Error:", error);
+            document.getElementById("results").innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+        }
+    }
+
+    function renderResults(results) {
+        const resultsDiv = document.getElementById("results");
+        resultsDiv.innerHTML = "";
+
+        results.forEach(result => {
+            const div = document.createElement("div");
+            div.classList.add("result-item");
+            div.innerHTML = `<h2>${result.filename} - ${result.tableKey}</h2>
+                             <p><strong>Caption:</strong> ${result.caption}</p>
+                             <p><strong>Table:</strong> ${result.table}</p>
+                             <p><strong>Footnotes:</strong> ${result.footnotes}</p>
+                             <p><strong>References:</strong> ${result.references}</p>`;
+            resultsDiv.appendChild(div);
+        });
+    }
+</script>
+
+</body>
+</html>

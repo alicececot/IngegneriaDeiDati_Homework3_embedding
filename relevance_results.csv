@@ -1,0 +1,51 @@
+query,filename,table ID,semantic_relevance,info_completeness,domain_relevance,average_relevance,search_type
+accuracy on ImageNet dataset for ResNet,2403.10488.json,S5.T6,2,1,2,1.6666666666666667,full-text
+accuracy on ImageNet dataset for ResNet,2409.02111.json,S2.T4,3,3,3,3.0,full-text
+accuracy on ImageNet dataset for ResNet,2112.00054.json,S4.T2,3,3,3,3.0,full-text
+accuracy on ImageNet dataset for ResNet,2112.00054.json,S4.T3,3,3,3,3.0,full-text
+accuracy on ImageNet dataset for ResNet,1911.07164.json,S7.T4,2,1,2,1.6666666666666667,full-text
+accuracy on ImageNet dataset for ResNet,2408.13909.json,id_table_1,3,3,3,3.0,embedding
+accuracy on ImageNet dataset for ResNet,2409.10362.json,A2.T5.2,3,3,3,3.0,embedding
+accuracy on ImageNet dataset for ResNet,2110.02470.json,A1.T3,3,3,3,3.0,embedding
+accuracy on ImageNet dataset for ResNet,2409.04986.json,A3.T13,1,0,1,0.6666666666666666,embedding
+accuracy on ImageNet dataset for ResNet,2307.01217.json,S7.T8,1,0,1,0.6666666666666666,embedding
+performance comparison on CIFAR-10 dataset,2409.18461.json,S7.SS1.80,3,3,3,3.0,full-text
+performance comparison on CIFAR-10 dataset,2406.13268.json,S3.T1,0,0,0,0.0,full-text
+performance comparison on CIFAR-10 dataset,2409.05307.json,S4.T2,0,0,0,0.0,full-text
+performance comparison on CIFAR-10 dataset,2409.05307.json,S4.T1,0,0,0,0.0,full-text
+performance comparison on CIFAR-10 dataset,2404.12725.json,S3.T2,0,0,0,0.0,full-text
+performance comparison on CIFAR-10 dataset,2101.07995.json,S4.T2,3,3,3,3.0,embedding
+performance comparison on CIFAR-10 dataset,2301.10114.json,S5.T2,3,3,3,3.0,embedding
+performance comparison on CIFAR-10 dataset,2305.19229.json,A2.T11,1,0,2,1.0,embedding
+performance comparison on CIFAR-10 dataset,2409.18461.json,S7.SS1.80,3,3,3,3.0,embedding
+performance comparison on CIFAR-10 dataset,2405.17267.json,A3.T14,3,3,3,3.0,embedding
+F1 score on RealWorld dataset,2202.08922.json,S5.T3,3,3,3,3.0,full-text
+F1 score on RealWorld dataset,2210.16918.json,S5.T1,3,3,3,3.0,full-text
+F1 score on RealWorld dataset,2402.17775.json,S3.T1,1,0,1,0.6666666666666666,full-text
+F1 score on RealWorld dataset,2405.15097.json,S3.T3,0,0,1,0.3333333333333333,full-text
+F1 score on RealWorld dataset,2110.10223.json,S5.T2,3,3,3,3.0,full-text
+F1 score on RealWorld dataset,2403.04577v1.json,id_table_6,0,0,1,0.3333333333333333,embedding
+F1 score on RealWorld dataset,2005.06117v1.json,id_table_13,0,0,1,0.3333333333333333,embedding
+F1 score on RealWorld dataset,1907.13113.json,S5.T7,0,0,1,0.3333333333333333,embedding
+F1 score on RealWorld dataset,2403.04577v1.json,id_table_5,0,0,1,0.3333333333333333,embedding
+F1 score on RealWorld dataset,2405.04485.json,S5.T7,0,0,1,0.3333333333333333,embedding
+hyperparameter tuning meta-learning methods,2206.04415v1.json,S5.T8,2,2,2,2.0,full-text
+hyperparameter tuning meta-learning methods,2206.04415v1.json,S5.T5,1,1,1,1.0,full-text
+hyperparameter tuning meta-learning methods,1810.02334v6.json,A7.T11,3,3,3,3.0,full-text
+hyperparameter tuning meta-learning methods,2011.00903v1.json,S5.T1,1,0,2,1.0,full-text
+hyperparameter tuning meta-learning methods,2205.15619v2.json,A1.T6,3,3,3,3.0,full-text
+hyperparameter tuning meta-learning methods,2107.02378v3.json,S2.T2,3,3,3,3.0,embedding
+hyperparameter tuning meta-learning methods,2107.02378v3.json,S1.T1,3,3,3,3.0,embedding
+hyperparameter tuning meta-learning methods,2205.15619v2.json,A1.T6,3,3,3,3.0,embedding
+hyperparameter tuning meta-learning methods,2002.06753v3.json,S2.T1,1,0,1,0.6666666666666666,embedding
+hyperparameter tuning meta-learning methods,2002.06753v3.json,A1.T7,1,0,1,0.6666666666666666,embedding
+accuracy on MNIST CNN,2102.01593.json,S4.T2,3,3,3,3.0,full-text
+accuracy on MNIST CNN,2309.04515.json,S6.T5,3,3,3,3.0,full-text
+accuracy on MNIST CNN,2405.00885.json,S6.T1,3,3,3,3.0,full-text
+accuracy on MNIST CNN,2211.11591.json,S5.T2,3,3,3,3.0,full-text
+accuracy on MNIST CNN,2207.05978.json,A2.T8,1,0,2,1.0,full-text
+accuracy on MNIST CNN,2106.03328.json,A6.T5,3,3,3,3.0,embedding
+accuracy on MNIST CNN,2212.01197.json,A4.T7,3,3,3,3.0,embedding
+accuracy on MNIST CNN,2306.11650.json,A5.T4,3,3,3,3.0,embedding
+accuracy on MNIST CNN,2206.07631.json,S4.T2,3,2,3,2.6666666666666665,embedding
+accuracy on MNIST CNN,2409.15067.json,S6.T3,2,1,2,1.6666666666666667,embedding
